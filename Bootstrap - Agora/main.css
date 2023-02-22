@@ -1,0 +1,208 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside2, details, figcaption, figure, footer, header, hgroup, menu, aside1, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+
+/* LAYOUT */
+
+aside1, main, footer {
+    padding: 1em;
+}
+
+figure {
+    margin-bottom: 1em;
+}
+
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Merriweather, serif;
+    color: #444;
+    line-height: 1.5;
+}
+
+h1, h2, h3, aside1, footer, figcaption {
+    font-family: Oswald, "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+header p{
+    margin-top: 15em;
+    text-align: right;
+}
+
+
+/* COLOUR SCHEME & BORDERS */
+
+header, footer {
+    background-color: #1f1712;
+    color: #b0ab9b;
+}
+
+aside1 {
+    background-color: #c4c4c4;
+}
+
+aside1 a {
+    color: #1f1712;
+}
+
+footer a {
+    color: #b0ab9b;
+}
+
+.selected, a:hover {
+    color: #f00;
+}
+
+
+/* aside1IGATION */
+
+aside1 ul, footer ul {
+    list-style-type: none;
+}
+
+aside1 li {
+    padding: 0.5em 2em 0.5em 0;
+}
+
+footer li {
+    margin: 0 1em;
+}
+
+aside1 a, footer a {
+    text-decoration: none;
+}
+
+
+/* IMAGES & VIDEOS */
+
+img {
+    width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 60em) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 20rem 40rem 1fr;
+	}
+	header, footer {
+		grid-column: 2 / 4;
+	}
+	aside1 {
+		grid-column: 2;
+		grid-row: 2 / 4;
+	}
+	aside2 {
+		grid-column: 3;
+		grid-row: 2;
+	}
+	main {
+		grid-column: 3;
+	}
+	header {
+		display: flex;
+		align-items: center;
+	}
+	header > img {
+    width: 24rem;
+	}
+	header > h1 {
+		flex-grow: 1;
+	}
+}
+
+@media screen and (min-width: 80em) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 20rem 40rem 20rem 1fr;
+	}
+		header, footer {
+		grid-column: 2 / 5;
+	}
+	aside1 {
+		grid-column: 2;
+		grid-row: 2 / 4;
+	}
+	main {
+		grid-column: 3 / 5;
+	}
+	header {
+		display: flex;
+		align-items: center;
+	}
+	header > img {
+    width: 24rem;
+	}
+	header > h1 {
+		flex-grow: 1;
+	}
+	aside2 {
+		background-color: #c4c4c4;
+	}
+
+	footer > ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+}
